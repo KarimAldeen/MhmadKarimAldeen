@@ -1,0 +1,10 @@
+.Expertise{
+
+    height: 90vh;
+    max-width: 100vw;
+    @include Flex ;
+    img{
+        width: 70vw;
+        transform: translate(2vw , -4vw);
+    }
+}

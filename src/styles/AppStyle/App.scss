@@ -1,0 +1,26 @@
+html,body{ background-color: var(--bg) ; margin: 0; padding: 0;overflow-x: none; scroll-behavior: smooth;}
+::-webkit-scrollbar { min-width: 15px; width: 100%;  min-height: 130px; } 
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px var(--Prim); }
+::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:hover {
+    background: url('/Bar.svg') no-repeat center center ; 
+    background-size: cover;
+ }
+
+ .HomePage_Top{
+    .FaceBook,.Google,.Linkedin,.Whatsapp,.Phone,.Message,.CV{
+    background-color: var(--Prim);
+    color: var(--Sec);
+    font-weight: 900;
+    z-index: 9999999;
+}
+ }
+ 
+ a{
+    color:var(--Sec);
+ }
+*{
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
