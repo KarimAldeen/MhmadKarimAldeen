@@ -44,3 +44,62 @@ html,body{ background-color: var(--bg) ; margin: 0; padding: 0;overflow-x: none;
 @import './KeyFrame.scss';
 @import './Home.scss';
 @import './Expert.scss';
+
+@media only screen and (max-width: 600px) { 
+    .Arrow,
+    .Face{
+display: none; 
+   }
+   .Navbar{
+    .Navbar_Mid{
+        transform: translateX(0);
+    }
+    a{
+        font-size: 4vw;
+    }
+    button{display: none;}
+    img{display: none;}
+   }
+   .HomePage{
+    height: 230px;
+   }
+   .HomePage_Top{
+    padding-top: 80px;
+
+   }
+   .Services{
+    height: 180px;
+    padding-top: 0;
+   }
+   .Expertise,.Look{
+    
+        height: 160px;
+        padding-top: 0;
+       }
+       .Footer{
+        height: 70px;
+        padding-top: 0;
+        img{
+            width: 100vw;
+        }
+       }
+       .O1{
+        left: -10px !important;
+    }
+     .O2{
+        right: -10px !important;    
+
+    }
+    svg{
+        font-size: 14px !important;
+    }
+    span{
+        height: 24px !important;
+        width: 30px !important;
+      
+       
+    }
+    .H_Left,.H_Right{
+        gap:11px !important;
+    }
+}

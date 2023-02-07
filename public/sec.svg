@@ -22,15 +22,15 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_284" data-name="Group 284" transform="translate(-12460.5 760)">
-    <g id="Word" transform="translate(11945 -997)">
+  <g id="sec" transform="translate(-515.5 -237)">
+    <g id="Group_276" data-name="Group 276">
       <g id="TEXT" transform="translate(-95 84.67)">
         <g transform="matrix(1, 0, 0, 1, 610.5, 152.33)" filter="url(#Rectangle_5)">
           <rect id="Rectangle_5-2" data-name="Rectangle 5" width="407" height="20" transform="translate(365.5 275)" fill="#fff"/>
         </g>
         <text id="MY_WORK" data-name="MY WORK" transform="translate(755 487.33)" fill="#151d41" font-size="140" font-family="TrebuchetMS-Bold, Trebuchet MS" font-weight="700"><tspan x="0" y="0">MY </tspan><tspan y="0" fill="#0fbf61">WORK</tspan></text>
         <text id="Karim_Aldeen" data-name="Karim Aldeen" transform="translate(633 325.33)" fill="#151d41" font-size="140" font-family="TrebuchetMS-Bold, Trebuchet MS" font-weight="700"><tspan x="0" y="0">Karim Aldeen</tspan></text>
-        <text id="Welcam_im" data-name="Welcam im" transform="translate(633 208.33)" fill="#0fbf61" font-size="60" font-family="TrebuchetMS-Bold, Trebuchet MS" font-weight="700"><tspan x="0" y="0">Welcam im</tspan></text>
+        <text id="welcome_im" data-name="welcome im" transform="translate(633 208.33)" fill="#0fbf61" font-size="60" font-family="TrebuchetMS-Bold, Trebuchet MS" font-weight="700"><tspan x="0" y="0">welcome im</tspan></text>
         <text id="Front-end_Designer" data-name="Front-end &amp; Designer" transform="translate(897 549.33)" fill="#151d41" font-size="34" font-family="SegoeUI, Segoe UI" letter-spacing="0.01em"><tspan x="0" y="0">Front-end &amp; Designer</tspan></text>
         <path id="Path_4" data-name="Path 4" d="M-.049,0H24.407a72.863,72.863,0,0,0-.725,9.66,81.183,81.183,0,0,0,.726,9.989H-.136Z" transform="translate(1111.452 427.659)" fill="#fff"/>
       </g>
@@ -49,6 +49,6 @@
         </g>
       </g>
     </g>
-    <rect id="Rectangle_151" data-name="Rectangle 151" width="43" height="28" transform="translate(12707 -695.5)" fill="#fff"/>
+    <rect id="Rectangle_146" data-name="Rectangle 146" width="29" height="24" transform="translate(768.003 306.376)" fill="#fff"/>
   </g>
 </svg>
