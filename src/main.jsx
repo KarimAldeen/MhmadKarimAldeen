@@ -1,8 +1,8 @@
 import React, { lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import './styles/AppStyle/Import.scss'
+import './styles/App.scss'
 const HomePage = lazy(()=>import("./Page/HomePage"))
-const Navbar = lazy(()=>import("./Components/Navbar"))
+const Navbar = lazy(()=>import("./Page/Navbar"))
 const Services = lazy(()=>import("./Page/Services"))
 const Expertise = lazy(()=>import("./Page/Expertise"))
 const Footer = lazy(()=>import("./Page/Footer"))

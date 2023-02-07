@@ -24,3 +24,23 @@ html,body{ background-color: var(--bg) ; margin: 0; padding: 0;overflow-x: none;
         outline: none;
     }
 }
+:root {
+    --Prim: #0FBF61;
+    --Sec: #151D41;
+  
+
+}
+@mixin Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
+@mixin Shadow {
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+
+}
+
+@import './KeyFrame.scss';
+@import './Home.scss';
+@import './Expert.scss';
