@@ -103,3 +103,11 @@ display: none;
         gap:11px !important;
     }
 }
+.App{
+    position: absolute;z-index: 99999999;
+background: url('../../public/CV.png') no-repeat center center;
+    background-size: contain;
+
+height: 90vh;width: 70vw;
+left: 10vw;
+}

@@ -2,10 +2,16 @@ import React from 'react'
 import Logo from '../../public/Logo.svg'
 import karimAldeen from '../../public/karimAldeen.pdf'
 const Navbar = () => {
+  function MouseEnter(){
+   document.getElementById("App").classList.add("App")
+  }
+  function MouseLeave(){
+    document.getElementById("App").classList.remove("App")
+   }
   return (
     <div className='Navbar'>
         <div className='Navbar_Left'>
-        <a href={karimAldeen} download >
+        <a href={karimAldeen} download onMouseEnter={MouseEnter} onMouseLeave={MouseLeave} >
           <button> Download CV</button>
           </a> 
         </div>
@@ -19,6 +25,7 @@ const Navbar = () => {
         </div>
         <div className='Navbar_Right'>
         <img src={Logo} alt='Karim' width="40px" height="40px"  />
+        <div  id='App'></div>
         </div>
 
     </div>

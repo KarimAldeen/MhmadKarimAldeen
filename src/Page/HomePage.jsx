@@ -14,7 +14,12 @@ import {  FaBook} from "react-icons/fa";
 import karimAldeen from '../../public/karimAldeen.pdf'
 
 const HomePage = () => {
-    
+  function MouseEnter(){
+    document.getElementById("App").classList.add("App")
+   }
+   function MouseLeave(){
+     document.getElementById("App").classList.remove("App")
+    }
   return (
     <div className='HomePage' id='HomePage'>
         <div className='HomePage_Top'>
@@ -48,7 +53,7 @@ const HomePage = () => {
 
           
             </span>
-            <a href={karimAldeen} download>
+            <a href={karimAldeen} download onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
                      <ReactTooltip anchorId="CV" className="CV"/>
                <FaBook id='CV' data-tooltip-content="Download CV"/>
             </a>
