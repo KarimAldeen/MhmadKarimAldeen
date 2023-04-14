@@ -1,0 +1,23 @@
+.Navbar{
+    width: 98vw;
+    display: flex; justify-content: space-between; align-items: center;
+
+    a{
+        color: var(--text) !important;
+        text-decoration: none !important;
+        border: none !important;
+        margin: 3vh 2vw;
+        font-size: 2.5vw;
+
+    }
+    .Left{
+        padding: 2vw;
+    }
+    .Right{
+        padding: 1vw;
+        rotate: 180deg;
+    }
+    img{
+        width: 10vw;
+    }
+}

@@ -1,113 +1,38 @@
-html,body{ background-color: var(--bg) ; margin: 0; padding: 0;overflow-x: none; scroll-behavior: smooth;}
-::-webkit-scrollbar { min-width: 15px; width: 100%;  min-height: 130px; } 
-::-webkit-scrollbar-track { box-shadow: inset 0 0 5px var(--Prim); }
-::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:hover {
-    background: url('/Bar.svg') no-repeat center center ; 
-    background-size: cover;
- }
-
- .HomePage_Top{
-    .FaceBook,.Google,.Linkedin,.Whatsapp,.Phone,.Message,.CV{
-    background-color: var(--Prim);
-    color: var(--Sec);
-    font-weight: 900;
-    z-index: 9999999;
-}
- }
- 
- a{
-    color:var(--Sec);
- }
-*{
-    &:focus{
-        border: none;
-        outline: none;
-    }
-}
 :root {
-    --Prim: #0FBF61;
-    --Sec: #151D41;
-  
-
+    --C1: #ffc82d;
+    --C2: #01b6a5;
+    --C3: #ff4457;
+    --text: hsl(205.09deg 96.49% 11.18%);
+    --bg: white;
+    --shadow: rgba(0, 0, 0, 0.15);
 }
-@mixin Flex {
-    display: flex;
-    justify-content: center;
-    align-items: center !important;
-}
-
 @mixin Shadow {
-  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+  
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+@mixin Flex {
+    display: flex; justify-content: center; align-items: center
+}
+*{
+    margin: 0; padding: 0;
+    color: var(--text);
 
 }
+body{
+    width: 100vw;
+    overflow-x: hidden;
 
-@import './KeyFrame.scss';
+}
+a{
+    text-decoration: none; font-weight: bold;
+}
 @import './Home.scss';
-@import './Expert.scss';
-
-@media only screen and (max-width: 600px) { 
-    .Arrow,
-    .Face{
-display: none; 
-   }
-   .Navbar{
-    .Navbar_Mid{
-        transform: translateX(0);
-    }
-    a{
-        font-size: 4vw;
-    }
-    button{display: none;}
-    img{display: none;}
-   }
-   .HomePage{
-    height: 230px;
-   }
-   .HomePage_Top{
-    padding-top: 80px;
-
-   }
-   .Services{
-    height: 180px;
-    padding-top: 0;
-   }
-   .Expertise,.Look{
-    
-        height: 160px;
-        padding-top: 0;
-       }
-       .Footer{
-        height: 70px;
-        padding-top: 0;
-        img{
-            width: 100vw;
-        }
-       }
-       .O1{
-        left: -10px !important;
-    }
-     .O2{
-        right: -10px !important;    
-
-    }
-    svg{
-        font-size: 14px !important;
-    }
-    span{
-        height: 24px !important;
-        width: 30px !important;
-      
-       
-    }
-    .H_Left,.H_Right{
-        gap:11px !important;
-    }
-}
-.App{
-    position: absolute;z-index: 99999999;
-background: url('../../public/CV.png') no-repeat center center;
-    background-size: contain;
-
-height: 90vh;width: 70vw;
-left: 10vw;
-}
+@import './Navbar.scss';
+@import './Services.scss';
+@import './Gallery.scss';
+@import './Location.scss';
+@import './Footer.scss'

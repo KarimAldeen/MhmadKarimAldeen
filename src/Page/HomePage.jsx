@@ -1,74 +1,47 @@
 import React from 'react'
-import Arrow from '../../public/Arrow.svg'
-import Face from '../../public/Face.svg'
-import Word from '../../public/sec.svg'
-import O from '../../public/O.svg'
-import Down from '../../public/Down.svg'
-import Dot from '../../public/DotO.svg'
-import 'react-tooltip/dist/react-tooltip.css'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
-  import { BsLinkedin,BsFillPhoneFill } from "react-icons/bs";
-import { RiWhatsappFill,RiMessage2Fill } from "react-icons/ri";
-import { AiFillGoogleCircle } from "react-icons/ai";
-import {  FaBook} from "react-icons/fa";
-import karimAldeen from '../../public/karimAldeen.pdf'
-
 const HomePage = () => {
-  function MouseEnter(){
-    document.getElementById("App").classList.add("App")
-   }
-   function MouseLeave(){
-     document.getElementById("App").classList.remove("App")
-    }
+
   return (
     <div className='HomePage' id='HomePage'>
-        <div className='HomePage_Top'>
-            <div className='H_Left'>
-            <ReactTooltip anchorId="Google" className="Google" />
-            <AiFillGoogleCircle id='Google' data-tooltip-content="MhmadKarimAldeen@gmail.com"/> 
-           <span>
-           <ReactTooltip anchorId="Linkedin" className="Linkedin"/>
-               <BsLinkedin id='Linkedin' data-tooltip-content="MhmadKarimAldeen"/>
-            </span>
-            <ReactTooltip anchorId="Whatsapp" className="Whatsapp"/>
-               <RiWhatsappFill id='Whatsapp' data-tooltip-content="0957551401"/>
-        
-            </div>
-            <div className='H_Mid'>
-            <img src={Arrow} className="Arrow fly"  alt='Karim' width="auto" height="auto"  />
-            <img src={Dot} className="Dot" alt='Karim' width="auto" height="auto"    />
-
-            <img src={Word} className="Word" alt='Karim' width="700" height="300" />
-            <img src={Face}  className="Face shake  " alt='Karim' width="auto" height="auto"  />
-
-            </div>
-            <div className='H_Right'>
-            <ReactTooltip anchorId="Phone" className="Phone"/>
-               <BsFillPhoneFill id='Phone' data-tooltip-content="0951968995"/>
-            <span>
-              <a href='#Footer'>
-              <ReactTooltip anchorId="Message" className="Message"/>
-               <RiMessage2Fill id='Message' data-tooltip-content="ContactMe"/>
-              </a>
-
-          
-            </span>
-            <a href={karimAldeen} download onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
-                     <ReactTooltip anchorId="CV" className="CV"/>
-               <FaBook id='CV' data-tooltip-content="Download CV"/>
-            </a>
-     
-
-            </div>
+      <div className='Top_Home' >
+      <div className='Left_Section'>
+        <div className='Images'>
+          <img src='/Home/Learn.svg' alt='Learn' width="100" />
+          <img className='School' src='/Home/School.svg' alt='School' width="100" />
 
         </div>
-        <div className='HomePage_Down'>
-        <img src={O} className="O1 O"  alt='Karim'width="auto" height="auto" title='' />
-            <img src={Down} className="Down " alt='Karim'   width="auto" height="auto"title='' />
-            <img src={O}  className="O2 O" alt='Karim'  width="auto" height="auto" title='' />
+        <h3>Why Our kindergarten</h3>
+        <h1>We Have The Top </h1>
+        <h2>Learning PlatForm</h2>
+        <h6> Not like other kindergartens, we focus all the power in <br />
+          your kids and try to make everything to make them happy<br />
+          and get better at the same time
+        </h6>
+      </div>
+      <div className='Right_section'>
+        <img src='/Home/girl.jpg' alt='girl' width="600" />
 
-        </div>
+      </div>
+      </div>
+      <div className='Elipse'>
+        <img className='Elipse1' src='/Home/Elipse.svg' alt='' />
+        <img className='Elipse2' src='/Home/Elipse.svg' alt='' />
 
+      </div>
+      <div className='Down_Home'>
+      <div className='Down_Box teachers'>
+        <img src='/Home/D1.svg' alt='teachers' width="50"/>
+        <h5>Outstanding teachers</h5>
+      </div>
+      <div className='Down_Box curriculum'>
+        <img src='/Home/D3.svg' alt='curriculum' width="50"/>
+        <h5>best curriculum</h5>
+      </div>
+      <div className='Down_Box experiences'>
+        <img src='/Home/D2.svg' alt='experiences' width="50"/>
+        <h5>International experiences</h5>
+      </div>
+      </div>
     </div>
   )
 }

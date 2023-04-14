@@ -1,0 +1,42 @@
+.Services{
+    padding-top: 30px;
+    min-height: 60vh;
+    width: 100vw;
+    @include Flex;
+    flex-direction: column;
+    
+    gap: 30px;
+    .Services_Top{
+        text-align: center;
+        width: 50%;
+        h1{
+            font-size: 4vw;
+            margin: 1vh;
+        }
+        p{
+            font-size: 1.4vw;
+        }
+    }
+    .Services_Bottum{
+    @include Flex; gap: 8vw;
+    flex-wrap: wrap;
+
+      .Services_Card{
+        @include Shadow;
+        width: 250px;
+        padding: 10px;
+        text-align: center;
+        height: 280px;
+      }}}
+      @media only screen and (max-width: 600px) {
+        .Services_Top{
+            width: 80% !important;
+
+            h1{
+                font-size: 8vw !important;
+            }
+            p{
+                font-size: 3vw !important;
+            }
+        }
+  }

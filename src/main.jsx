@@ -1,21 +1,22 @@
 import React, { lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import './styles/App.scss'
+import Footer from './Page/Footer'
+import Gallery from './Page/Gallery'
+import Location from './Page/Location'
+import Navbar from './Page/Navbar'
+import Services from './Page/Services'
+import './styles/app.scss'
 const HomePage = lazy(()=>import("./Page/HomePage"))
-const Navbar = lazy(()=>import("./Page/Navbar"))
-const Services = lazy(()=>import("./Page/Services"))
-const Expertise = lazy(()=>import("./Page/Expertise"))
-const Footer = lazy(()=>import("./Page/Footer"))
-const Look = lazy(()=>import("./Page/Look"))
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <Navbar />
+  <Navbar/>
     <HomePage />
-    <Services />
-    <Expertise />
-    <Look />  
-    <Footer />  
+    <Services/>
+    <Gallery/>
+    <Location /> 
+    <Footer />
 
   </>
 

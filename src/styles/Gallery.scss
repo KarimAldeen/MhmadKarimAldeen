@@ -1,0 +1,26 @@
+.Gallery{
+    padding-top: 10vh;
+    min-height: 70vh;
+    
+    width: 100vw;
+    @include Flex;
+    flex-direction: column;
+    gap: 11vh;
+    img{
+        width: 300px;
+    }
+    .Gallery_Top{
+        text-align: center;
+        width: 50%;
+        h1{
+            font-size: 4vw;
+            margin: 1vh;
+        }
+        p{
+            font-size: 1.4vw;
+        }
+    }
+    .Gallery_Bottum{
+    @include Flex; gap: 8vw;
+   flex-wrap: wrap;
+}}

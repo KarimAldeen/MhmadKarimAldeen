@@ -1,0 +1,84 @@
+.Location{
+    padding-top: 10vh;
+    min-height: 70vh;
+    margin-bottom: 50px;
+    
+    width: 100vw;
+    @include Flex;
+    flex-direction: column;
+    gap: 11vh;
+    .Location_Top{
+        text-align: center;
+        width: 50%;
+        h1{
+            font-size: 4em;
+            margin: 1vh;
+        }
+        p{
+            font-size: 1.4vw;
+        }
+    }
+    .Location_Bottum{
+    @include Flex; gap: 2vw;
+   flex-wrap: wrap;
+   
+   .Location_Bottum_Left{
+    height: 40vh;
+    h1{
+        color: rgb(122, 214, 214);
+        margin: 20px;
+    }
+    p{
+        margin:30px ;
+        color: #ffc82d;
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+   }
+   .map-button{
+    width: 200px;
+    border: 1px solid #25c7a1;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #4ef1cb;
+    height:59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-left: 20px;
+    .text{
+        font-weight: bold;
+        margin-inline: 10px;
+    }
+    .icons{
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        @include Flex
+    }
+   }
+   .map-images{
+    @include Shadow;
+    border-radius: 10px;
+    img{
+        width: 45vw;
+    }
+   }
+    }
+}
+@media only screen and (max-width: 600px) {
+  .Location_Bottum_Left{
+   display: flex; align-items: center ; flex-direction: column;
+  }
+  
+  .Location_Bottum_Left{
+    h1{
+        font-size: 8vw !important;
+
+    }
+    p{
+        font-size: 3vw !important;
+    }
+   }
+}
